@@ -9,7 +9,7 @@ struct VeilApp: App {
         MenuBarExtra {
             MenuContent(controller: appDelegate.controller)
         } label: {
-            Image(systemName: appDelegate.controller.isLive ? "character.bubble.fill" : "character.bubble")
+            Image(nsImage: appDelegate.controller.isLive ? MenuBarIcon.on : MenuBarIcon.off)
         }
 
         Window("언어 팩", id: "languages") {
