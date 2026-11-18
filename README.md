@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/images/logo.png" width="200" alt="베일 로고"></p>
+
 # 베일 (Veil)
 
 맥 화면의 외국어를 **실시간으로** 한국어로 번역해서 원래 자리에 덮어 보여주는 메뉴바 앱.

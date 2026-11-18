@@ -8,6 +8,8 @@
     <string>Veil</string>
     <key>CFBundleDisplayName</key>
     <string>베일</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
     <key>CFBundleExecutable</key>
     <string>Veil</string>
     <key>CFBundlePackageType</key>

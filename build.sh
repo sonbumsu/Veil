@@ -30,9 +30,10 @@ pkill -x "$APP_NAME" 2>/dev/null || true
 pkill -x ScreenTranslator 2>/dev/null || true          # 예전 이름으로 설치된 앱
 rm -rf "$HOME/Applications/ScreenTranslator.app"
 rm -rf "$APP"
-mkdir -p "$APP/Contents/MacOS"
+mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BUILD_DIR/$APP_NAME" "$APP/Contents/MacOS/"
 cp Resources/Info.plist "$APP/Contents/Info.plist"
+cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 
 # 서명 순서: 애플 개발자 인증서 → 이 맥 전용 개인 인증서 → 임시(ad-hoc)
 # 같은 인증서로 계속 서명해야 다시 빌드해도 화면 녹화 권한이 유지돼요.
